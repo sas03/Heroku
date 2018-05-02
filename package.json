@@ -1,0 +1,19 @@
+{
+  "name": "exercice_express",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "push": "echo coucou & echo bonjour",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^5.0.6",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {},
+  "description": ""
+}

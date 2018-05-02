@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        img:hover{
+            cursor: pointer;
+        }
+
+        table, th, td{
+            border: solid black;
+            background: gold;
+        }
+
+        body {
+            min-height: 75rem;
+            padding-top: 4.5rem;
+        }
+    </style>
+    <script type="text/javascript">
+        var sum = 1;
+        //var numbers = [1];
+        //function myFunction(item){}
+        function myFunction() {
+            //sum += item;
+            sum = sum + 1;
+            demo.innerHTML = sum + " clicks";
+            x = 20;
+            while(sum >= x){
+              bonus.innerHTML = 0;
+              x = x + 20;
+              bonus.innerHTML = parseFloat(bonus.innerHTML) + 1;
+            }
+        }
+
+/*        var nbclics = 0;//la variable de nombre de clics
+        var numbers = [1];
+        function compteur(item) {//La fonction qui affiche le nombre de clics
+            nbclics += item;
+            imgclics.innerHTML = nbclics;
+            //alert("Vous avez cliqué " + nbclics + " fois en 10 secondes !");//On alerte le visiteur
+            //document.body.removeChild(document.getElementById('imgclics'));//on enlève l'image
+        }
+        
+        //setTimeout('compteur()', 10000);//Au bout de dix secondes on exécute la fonction compteur() */
+    </script>
+</head>
+<body style="margin-top: 50px; background-color: brown">
+
+    
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">SSA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Sign in</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+    
+    <!-- <p id="demo" style="font-size: 30px; position: absolute; top: 10px; left: 200px; color: white"></p> -->
+    <h1 style="color: white; text-decoration-line: underline; position: absolute; top: 80px; margin-left: 70px">Click on the Cookie</h1>
+    <img src="https://az650423.vo.msecnd.net/alert-media/alert_image_35844_a477b17b-f379-4104-8881-4d66a5b6d3fc.png" style="position: absolute; top: 150px" onclick="myFunction()"/>    
+    <!-- <img src="https://az650423.vo.msecnd.net/alert-media/alert_image_35844_a477b17b-f379-4104-8881-4d66a5b6d3fc.png" style="position: absolute; top: 150px" onclick="numbers.forEach(myFunction)"/> -->   
+    
+    <table style="width: 500px; height: 300px; position: absolute; top: 170px; right: 100px;">
+        <tr>
+          <th style="font-weight: bold; width: 50px">#</th>
+          <th>Clicks</th>
+          <th>Bonus</th> 
+          <th>Meilleurs scores</th>
+        </tr>
+        <tr>
+          <td style="font-weight: bold; width: 50px">1</td>
+          <td><p id="demo" style="font-size: 20px; margin-top: 0px; margin-bottom: 0px; margin-left: 10px; margin-right: 0px; color: green; font-weight: bold"></p></td>
+          <td style="text-align: right"><p id="bonus" style="font-size: 20px; margin-top: 0px; margin-bottom: 0px; margin-left: 10px; margin-right: 0px; color: green; font-weight: bold"></p><img src="https://cdn4.iconfinder.com/data/icons/miscellaneous-icons-1/200/misc_game_life-512.png" alt="image" style="width: 30px; height: 30px;"></td> 
+          <td style="text-align: right"><img src="https://cdn3.iconfinder.com/data/icons/supermario/PNG/Mushroom---Life.png" alt="image" style="width: 30px; height: 30px;"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold; width: 50px">2</td>
+          <td></td>
+          <td style="text-align: right"><img src="https://cdn2.iconfinder.com/data/icons/indeepop_iconspack_/128/shock_rave_bonus.png" alt="image" style="width: 30px; height: 30px;"></td> 
+          <td style="text-align: right"><img src="https://cdn3.iconfinder.com/data/icons/supermario/PNG/Mushroom---Life.png" alt="image" style="width: 30px; height: 30px;"></td>           
+        </tr>
+        <tr>
+          <td style="font-weight: bold; width: 50px">3</td>
+          <td></td>
+          <td style="text-align: right"><img src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678081-life-buoy-128.png" alt="image" style="width: 30px; height: 30px;"></td> 
+          <td style="text-align: right"><img src="https://cdn3.iconfinder.com/data/icons/supermario/PNG/Mushroom---Life.png" alt="image" style="width: 30px; height: 30px;"></td>           
+        </tr>
+      </table>
+    <!-- <img src="https://az650423.vo.msecnd.net/alert-media/alert_image_35844_a477b17b-f379-4104-8881-4d66a5b6d3fc.png" onclick="nbclics++;" id="imgclics"/> -->
+    <!-- <img src="chemin/image.extension" onclick="nbclics++;" id="imgclics"/> -->
+    <div style="margin-top: 420px">
+      <img src="https://orig00.deviantart.net/693e/f/2016/345/a/d/mario_run5_devart_by_t_free-daraj8q.gif" alt="image"/>
+      <img src="https://pa1.narvii.com/6679/25d71ba8790f3149dcb86401fd727a33515fcbad_128.gif" alt="image"/>
+      <img src="https://cdn3.iconfinder.com/data/icons/supermario/PNG/Question-Block.png" alt="image" style="margin-left: 600px"/>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

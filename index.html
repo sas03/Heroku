@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+        pariatur. Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+        <button id="cookie">+</button>
+        <p><progress id="avancement" value="0" max="100"></progress></p>
+
+        <!-- <button disabled="disabled" id="gainpow1" class="gainpower">1</button> -->
+  
+        <!-- const est immutable alors que let est mutable -->
+        <script>
+            document
+            .querySelector('#cookie')
+            .addEventListener('click',() =>{
+                document.querySelector('#avancement').value += 1;
+            });
+
+            /*document.querySelector('.cookie').addEventListener('click',() =>{
+                document.querySelector('.avancement').value += 1;
+            });
+
+            document
+            .querySelector('#cookie')
+            .addEventListener('click',() =>{
+                gainpow++;
+                document.querySelector('.avancement').value += 1;
+            });*/
+                 
+            //addEventListener c'est l'équivalent de onclick(button)
+            /*let gainpower = 0;
+
+            function progress(value){
+                if(value > 10){
+                    document.querySelector(#gainpower1).disabled = false;
+                }
+            }
+
+            document.querySelector('.gainpower').addEventListener('click', () => {
+                gainpower = 0;
+                progress(0);
+            })
+            document.querySelector('#avancement').value*/
+        </script>
+</body>
+</html>
+

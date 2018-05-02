@@ -1,0 +1,18 @@
+doctype html
+html(lang='fr')
+    head 
+        title Page
+        script(type='text/javascript').
+            foo = true;
+            bar = function () {};
+            if (foo) {
+                bar(1+5)
+            }
+    body
+        h1 Page - Template 
+        #container.col
+            p Good guy 
+            p 
+                | Nice 
+                | Neutral
+                | Bad

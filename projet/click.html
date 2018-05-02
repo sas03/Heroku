@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img:hover{
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        var sum = 0;
+        var numbers = [1];
+        function myFunction(item) {
+            sum += item;
+            demo.innerHTML = sum + " cookies";
+        }
+
+/*        var nbclics = 0;//la variable de nombre de clics
+        var numbers = [1];
+        function compteur(item) {//La fonction qui affiche le nombre de clics
+            nbclics += item;
+            imgclics.innerHTML = nbclics;
+            //alert("Vous avez cliqué " + nbclics + " fois en 10 secondes !");//On alerte le visiteur
+            //document.body.removeChild(document.getElementById('imgclics'));//on enlève l'image
+        }
+        
+        //setTimeout('compteur()', 10000);//Au bout de dix secondes on exécute la fonction compteur() */
+    </script>
+</head>
+<body style="text-align: center; margin-top: 50px; background-color: brown">
+    
+    <p id="demo" style="text-align: center; font-size: 30px; color: white"></p>
+
+    <img src="https://az650423.vo.msecnd.net/alert-media/alert_image_35844_a477b17b-f379-4104-8881-4d66a5b6d3fc.png" onclick="numbers.forEach(myFunction)"/>    
+    
+    <!-- <img src="https://az650423.vo.msecnd.net/alert-media/alert_image_35844_a477b17b-f379-4104-8881-4d66a5b6d3fc.png" onclick="nbclics++;" id="imgclics"/> -->
+    <!-- <img src="chemin/image.extension" onclick="nbclics++;" id="imgclics"/> -->
+</body>
+</html>
